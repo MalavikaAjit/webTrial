@@ -23,7 +23,7 @@ let port = process.env.PORT || 9000;
 //               .main {
 //                   margin: 30px;
 //               }
-      
+
 //           </style>
 //         </head>
 //     <body>
@@ -41,14 +41,14 @@ let port = process.env.PORT || 9000;
 //         console.log(response.data);
 //         element.innerHTML = response.data;
 //     })
-              
+
 //     </script>
 //     <iframe src="https://harisha.herokuapp.com">
 //     </iframe>
-    
+
 //     </body>
 //     </html>`)
-   
+
 //   });
 
 // app.get("/dev/exp", (req, res) => {
@@ -61,13 +61,13 @@ let port = process.env.PORT || 9000;
 //               .main {
 //                   margin: 30px;
 //               }
-      
+
 //           </style>
 //         </head>
 //     <body>
 //         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 //         <script src="https://unpkg.com/bipp"></script>
-    
+
 //     <div class="main">
 //       <h2>Bipp dashboard</h2>
 //       <div class="dashboard">
@@ -75,24 +75,24 @@ let port = process.env.PORT || 9000;
 //       </div>
 //     </div>
 //     <script>
-  
+
 //     const width = window.innerWidth;
 //     const height = window.innerHeight;
-  
+
 //         //let url = "https://hdpqvz.app.bippanalytics.com/embed/63dd8226-6c15-4002-8453-5e341c74d433?id=5220cbd6-95d8-47ed-9b1e-23e6d399e6b2&cid=c72f100203dc452b932af466efdaa342.hdpqvz.app.bippanalytics.com&secret=D01YojC4wB4wHxO2CNEMA4Yy2y6OWGEz63kRy36rVJE3dBQi";
 //         // let url = "https://hdpqvz.app.bippanalytics.com/embed/b4ad3659-7d2f-4b99-b9f4-d66324c6f9dd?id=5220cbd6-95d8-47ed-9b1e-23e6d399e6b2&cid=c72f100203dc452b932af466efdaa342.hdpqvz.app.bippanalytics.com&secret=D01YojC4wB4wHxO2CNEMA4Yy2y6OWGEz63kRy36rVJE3dBQi"
 //         let url = "https://gumhpe.bipp-dev.bippanalytics.com/embed/9969417f-1359-47b3-84c3-b3f25f815ee4?id=caa6888e-5b89-497e-979c-cc00397e79cd&cid=ca3c81fb583a490cafdae78770dd9d18.gumhpe.bipp-dev.bippanalytics.com&secret=x@dbyDcBYirRd28ntppyMQM3AU4wJc!3DGxR3A7DZHDmXvPU"
 //         let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-        
+
 //         let bipp = new Bipp({debug: 1});
 //         bipp.load(url, config);
 //     </script>
-    
+
 //     </body>
 //     </html>`)
-   
+
 //   });
-  
+
 
 // app.get("/dev/newj", (req, res) => {
 
@@ -104,13 +104,13 @@ let port = process.env.PORT || 9000;
 //             .main {
 //                 margin: 30px;
 //             }
-    
+
 //         </style>
 //       </head>
 //   <body>
 //       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 //       <script src="https://unpkg.com/bipp-dev@1.0.6/bipp.js"></script>
-  
+
 //   <div class="main">
 //     <h2>Bipp dashboard</h2>
 //     <div class="dashboard">
@@ -124,14 +124,14 @@ let port = process.env.PORT || 9000;
 
 //       let url = "https://rbpdpj.app.bippanalytics.com/embed/ca0d6b46-0e20-4964-b235-e2ef21793467?id=8d1a8115-3e5c-44f6-a04a-c7e48dc1c013&cid=0741388954f4417fb893ee3050b33240.rbpdpj.app.bippanalytics.com&secret=eHet0Z9XJqooWwpE93TXpapCM3YCpnUrkqKmgwFkHA5wZqrm";
 //       let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-      
+
 //       let bipp = new Bipp({debug: 1});
 //       bipp.load(url, config);
 //   </script>
-  
+
 //   </body>
 //   </html>`)
- 
+
 // });
 
 // app.get("/dev/demo1", (req, res) => {
@@ -144,13 +144,13 @@ let port = process.env.PORT || 9000;
 //             .main {
 //                 margin: 30px;
 //             }
-    
+
 //         </style>
 //       </head>
 //   <body>
 //       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 //       <script src="https://unpkg.com/bipp-dev@1.0.6/bipp.js"></script>
-  
+
 //   <div class="main">
 //     <h2>Bipp dashboard</h2>
 //     <div class="dashboard">
@@ -164,14 +164,14 @@ let port = process.env.PORT || 9000;
 
 //       let url = "https://xkmzkx.app.bippanalytics.com/embed/41fc8586-f7bf-453c-9636-bb198fe597a5?id=1b89c314-5365-4d72-bf36-f64e825d0a46&cid=ffc632e8723641ff9346caf70dea94b6.xkmzkx.app.bippanalytics.com&secret=0llGdlhUyoLm1!LBxPc6wWi5u2L4kWrCVSstH4bwNo0Q5yyy";
 //       let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-      
+
 //       let bipp = new Bipp({debug: 1});
 //       bipp.load(url, config);
 //   </script>
-  
+
 //   </body>
 //   </html>`)
- 
+
 // });
 
 // app.get("/dev/multi", (req, res) => {
@@ -186,15 +186,15 @@ let port = process.env.PORT || 9000;
 //                 .main {
 //                     margin: 60px;
 //                 }
-        
+
 //                 .filter-panel {
 //                     margin-top: 30px;
 //                 }
-        
+
 //                 .dashboard {
 //                     margin-top: 30px;
 //                 }
-        
+
 //                 .filters {
 //                     padding: 8px;
 //                 }
@@ -222,19 +222,19 @@ let port = process.env.PORT || 9000;
 //                     color: blue;
 //                     cursor: pointer;
 //                 }
-               
+
 //             </style>
 //             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-    
+
 //             <!-- Compressed JavaScript -->
 //             <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    
+
 //     </head>
-  
+
 //     <body>
 //       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 //       <script src="https://unpkg.com/bipp-dev"></script>
-  
+
 //   <div class="main">
 //       <div class="header"> 
 //           <h4>Tabbed Embedding</h4>
@@ -249,18 +249,18 @@ let port = process.env.PORT || 9000;
 //             </div>
 //         </div>
 //   </div>
-  
+
 //   <div class="dashboard">
 //       <div id='container1'></div>
 //       <div id='container2'></div>
 //   </div>
 //   </div>
 //       <script>
-  
+
 //       const height = window.innerHeight;
-  
+
 //       const mapping = {
-  
+
 //               d1: { 
 //                   url: "https://harshitaja.app.bippanalytics.com/embed/ce726b8d-da40-409c-9ea8-f3d2c1e1dee7?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks",
 //                   id: 'container1'
@@ -270,24 +270,24 @@ let port = process.env.PORT || 9000;
 //                   id : 'container2'
 //               },
 //       }
-  
+
 //           loadDashboard('d1');
-      
+
 //       function listClick(elem) {
 //               const _elem = document.getElementsByClassName('first')[0];
 //               _elem.classList.remove('first');
 //               elem.classList.add('first');
-  
+
 //         const key = elem.getAttribute('value');
 //         loadDashboard(key);
 //       }
-  
+
 //       function loadDashboard(key) {
-  
+
 //               let { url, id, isLoaded } = mapping[key];
 //               if (!isLoaded) { 
 //                   let config = { id, width: "100%", height, style: 'border:none;' }
-  
+
 //                   let bipp = new Bipp();
 //                   bipp.load(url, config);
 //                   mapping[key].isLoaded = true;
@@ -306,7 +306,7 @@ let port = process.env.PORT || 9000;
 //       }
 //       </script>
 //   </body>
-  
+
 //   </html>`)
 // });
 
@@ -314,25 +314,183 @@ app.get("/", (req, res) => {
 
   res.send(`<!DOCTYPE html>
   <html>
-      <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <style>
-            .main {
-                margin: 30px;
-            }
-    
-        </style>
-      </head>
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      
+      * {
+          margin: 0px;
+          padding: 0px;
+      }
+
+      .logo {
+          width: 22%;
+          display: flex;
+          justify-content: start;
+          align-items: revert;
+
+      }
+
+
+      .logo img {
+          width: 75%;
+          /* border: 3px solid rgb(245, 245, 245);
+          border-radius: 100px; */
+      }
+
+
+      .navbar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          top: 0;
+          cursor: pointer;
+          border-bottom: 2px solid #030956;
+          ;
+      }
+
+
+      .background {
+          background: rgba(224, 219, 219, 0.03) url(../img/img3.jpg);
+          background-size: cover;
+          background-blend-mode: darken;
+      }
+
+
+      .nav-list {
+          width: 70%;
+          display: flex;
+          align-items: center;
+      }
+
+
+      .nav-list li {
+          list-style: none;
+          padding: 27px 81px;
+          font-size: 20px;
+          font-family: 'Ubuntu', sans-serif;
+      }
+
+      .userName {
+          font-size: 20px;
+          font-family: 'Ubuntu', sans-serif;
+          margin-right: 5px;
+      }
+
+
+      .nav-list li a {
+          text-decoration: none;
+          color: #030956;
+      }
+
+
+      .nav-list li a:hover {
+          color: black;
+          background-color: rgb(255, 255, 255);
+      }
+
+
+      .rightnav {
+
+          width: 3%;
+          text-align: right;
+          padding: 0 23px;
+      }
+
+
+
+
+      #btn btn-sm a {
+          list-style: none;
+          text-decoration: none;
+          color: white;
+      }
+
+      .btn {
+          padding: 8px 20px;
+          margin: 7px 6px;
+          border: 2px solid white;
+          border-radius: 50px;
+          background: none;
+          color: white;
+          cursor: pointer;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 16px;
+      }
+
+      .btn a {
+          text-decoration: none;
+          color: white;
+      }
+
+      .btn:hover {
+          text-decoration: none;
+          list-style: none;
+          color: rgb(0, 0, 0);
+          background-color: rgb(0, 255, 191);
+      }
+
+      .btn-dark {
+          color: black;
+          border: 2px solid black;
+      }
+
+   
+      .center-div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .div2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .font {
+          font-size: 40px;
+          font-family: 'Ubuntu', sans-serif;
+          color: #030956;
+      }
+  </style>
+  <title>project</title>
+</head>
   <body>
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script src="https://unpkg.com/bipp"></script>
   
-  <div class="main">
-    <h2>Company Website</h2>
-    <h2>Retail Sales Dashboard</h2>
-    <div class="dashboard">
-        <div id='container'></div>
-    </div>
+      <div>
+      <nav class="navbar background h-nav-resp">
+          <ul class="nav-list v-class-resp">
+              <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+              <li><a href="index.html">Sales</a></li>
+              <li><a href="About.html">Marketing</a></li>
+              <li><a href="#services">Finance</a></li>
+              <li><a href="contact.html">HR</a></li>
+              <span class="userName">Jim</span>
+              <div class="logo"><img src="./logos/image.png" alt="logo"></div>
+          </ul>
+          <!-- <div class="rightnav v-class-resp">
+              <span>Jim</span>
+              <div class="logo"><img src="./logos/image.png" alt="logo"></div>
+          </div> -->
+
+      </nav>
+      <div style="padding: 40px;">
+          <div class="center-div">
+              <span class="div2 font">Hi jim  Welcome to C-Mart</span>
+
+          </div>
+      </div>
+      <div style="padding: 40px;">
+          <div class="center-div">
+              <span class="div2 font">Here’s Your Sales Dashboard</span>
+
+          </div>
+      </div>
   </div>
   <script>
 
@@ -350,7 +508,7 @@ app.get("/", (req, res) => {
   
   </body>
   </html>`)
- 
+
 });
 
 // app.get("/dev", (req, res) => {
@@ -363,13 +521,13 @@ app.get("/", (req, res) => {
 //             .main {
 //                 margin: 30px;
 //             }
-    
+
 //         </style>
 //       </head>
 //   <body>
 //       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 //       <script src="https://unpkg.com/bipp-dev"></script>
-  
+
 //   <div class="main">
 //     <h2>Bipp dashboard</h2>
 //     <div class="dashboard">
@@ -382,18 +540,18 @@ app.get("/", (req, res) => {
 //       const height = window.innerHeight;
 
 //       let url = "https://harshitaja.app.bippanalytics.com/embed/ce726b8d-da40-409c-9ea8-f3d2c1e1dee7?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks"
-      
+
 //       let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-      
+
 //       let bipp = new Bipp();
 //       bipp.load(url, config);
 //   </script>
-  
+
 //   </body>
 //   </html>`)
- 
+
 // });
 
-app.listen(port, function() {
+app.listen(port, function () {
   console.log("Running node server", "on port " + port);
 });
