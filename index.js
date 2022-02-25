@@ -491,6 +491,9 @@ app.get("/", (req, res) => {
 
           </div>
       </div>
+      <div class="dashboard">
+        <div id='container'></div>
+    </div>
   </div>
   <script>
 
