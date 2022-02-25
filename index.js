@@ -81,7 +81,7 @@ app.get("/dev/exp", (req, res) => {
   
         //let url = "https://hdpqvz.app.bippanalytics.com/embed/63dd8226-6c15-4002-8453-5e341c74d433?id=5220cbd6-95d8-47ed-9b1e-23e6d399e6b2&cid=c72f100203dc452b932af466efdaa342.hdpqvz.app.bippanalytics.com&secret=D01YojC4wB4wHxO2CNEMA4Yy2y6OWGEz63kRy36rVJE3dBQi";
         // let url = "https://hdpqvz.app.bippanalytics.com/embed/b4ad3659-7d2f-4b99-b9f4-d66324c6f9dd?id=5220cbd6-95d8-47ed-9b1e-23e6d399e6b2&cid=c72f100203dc452b932af466efdaa342.hdpqvz.app.bippanalytics.com&secret=D01YojC4wB4wHxO2CNEMA4Yy2y6OWGEz63kRy36rVJE3dBQi"
-        let url = "https://gumhpe.bipp-dev.bippanalytics.com/embed/9969417f-1359-47b3-84c3-b3f25f815ee4?id=caa6888e-5b89-497e-979c-cc00397e79cd&cid=ca3c81fb583a490cafdae78770dd9d18.gumhpe.bipp-dev.bippanalytics.com&secret=x@dbyDcBYirRd28ntppyMQM3AU4wJc!3DGxR3A7DZHDmXvPU"
+        let url = "https://ketaki-desale.app.bipp.io/embed/434560d5-d81e-4ac1-8953-879609d17217?id=6e0f6e85-c259-4634-abce-ca109bfc60ff&cid=aa6a7b1ddeb44c0b83de98c33c65e1ea.ketaki-desale.app.bipp.io&secret=x1kYW1MRpp0c9YfHzAEctxhtgGpxJhAFAof9i5LJesvsK@bc"
         let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
         
         let bipp = new Bipp({debug: 1});
