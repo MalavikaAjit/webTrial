@@ -174,141 +174,141 @@ let port = process.env.PORT || 9000;
  
 // });
 
-app.get("/dev/multi", (req, res) => {
+// app.get("/dev/multi", (req, res) => {
 
-  res.send(`<!DOCTYPE html>
-  <html lang="en">
-      <!DOCTYPE html>
-      <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-                .main {
-                    margin: 60px;
-                }
+//   res.send(`<!DOCTYPE html>
+//   <html lang="en">
+//       <!DOCTYPE html>
+//       <html>
+//         <head>
+//             <meta name="viewport" content="width=device-width, initial-scale=1">
+//             <style>
+//                 .main {
+//                     margin: 60px;
+//                 }
         
-                .filter-panel {
-                    margin-top: 30px;
-                }
+//                 .filter-panel {
+//                     margin-top: 30px;
+//                 }
         
-                .dashboard {
-                    margin-top: 30px;
-                }
+//                 .dashboard {
+//                     margin-top: 30px;
+//                 }
         
-                .filters {
-                    padding: 8px;
-                }
-                .menu-text1 {
-                    padding: 8px;
-                    cursor: pointer;
-                    color:blue;
-                }
-                .first {
-                    color: black;
-                }
-                .login {
-                  display: flex;
-                }
-                .header {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .user {
-                    padding: 0 8px;
-                    /* color: brown; */
-                    font-style: italic;
-                }
-                .logout {
-                    color: blue;
-                    cursor: pointer;
-                }
+//                 .filters {
+//                     padding: 8px;
+//                 }
+//                 .menu-text1 {
+//                     padding: 8px;
+//                     cursor: pointer;
+//                     color:blue;
+//                 }
+//                 .first {
+//                     color: black;
+//                 }
+//                 .login {
+//                   display: flex;
+//                 }
+//                 .header {
+//                     display: flex;
+//                     justify-content: space-between;
+//                 }
+//                 .user {
+//                     padding: 0 8px;
+//                     /* color: brown; */
+//                     font-style: italic;
+//                 }
+//                 .logout {
+//                     color: blue;
+//                     cursor: pointer;
+//                 }
                
-            </style>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+//             </style>
+//             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     
-            <!-- Compressed JavaScript -->
-            <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+//             <!-- Compressed JavaScript -->
+//             <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     
-    </head>
+//     </head>
   
-    <body>
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-      <script src="https://unpkg.com/bipp-dev"></script>
+//     <body>
+//       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+//       <script src="https://unpkg.com/bipp-dev"></script>
   
-  <div class="main">
-      <div class="header"> 
-          <h4>Tabbed Embedding</h4>
-      </div>  
-  <div class="filter-panel">
-        <div class="top-bar">
-            <div class="top-bar-left">
-              <ul class="dropdown menu" data-dropdown-menu>
-               <li value="d1" onclick="listClick(this)" class="menu-text1 first">Orders</li>
-                <li value="d2" onclick="listClick(this)" class="menu-text1">Products</li>
-              </ul>
-            </div>
-        </div>
-  </div>
+//   <div class="main">
+//       <div class="header"> 
+//           <h4>Tabbed Embedding</h4>
+//       </div>  
+//   <div class="filter-panel">
+//         <div class="top-bar">
+//             <div class="top-bar-left">
+//               <ul class="dropdown menu" data-dropdown-menu>
+//                <li value="d1" onclick="listClick(this)" class="menu-text1 first">Orders</li>
+//                 <li value="d2" onclick="listClick(this)" class="menu-text1">Products</li>
+//               </ul>
+//             </div>
+//         </div>
+//   </div>
   
-  <div class="dashboard">
-      <div id='container1'></div>
-      <div id='container2'></div>
-  </div>
-  </div>
-      <script>
+//   <div class="dashboard">
+//       <div id='container1'></div>
+//       <div id='container2'></div>
+//   </div>
+//   </div>
+//       <script>
   
-      const height = window.innerHeight;
+//       const height = window.innerHeight;
   
-      const mapping = {
+//       const mapping = {
   
-              d1: { 
-                  url: "https://harshitaja.app.bippanalytics.com/embed/ce726b8d-da40-409c-9ea8-f3d2c1e1dee7?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks",
-                  id: 'container1'
-              },
-              d2: {
-                  url: "https://harshitaja.app.bippanalytics.com/embed/cbbec00d-9067-45db-b5e3-36c31f71382a?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks",
-                  id : 'container2'
-              },
-      }
+//               d1: { 
+//                   url: "https://harshitaja.app.bippanalytics.com/embed/ce726b8d-da40-409c-9ea8-f3d2c1e1dee7?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks",
+//                   id: 'container1'
+//               },
+//               d2: {
+//                   url: "https://harshitaja.app.bippanalytics.com/embed/cbbec00d-9067-45db-b5e3-36c31f71382a?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks",
+//                   id : 'container2'
+//               },
+//       }
   
-          loadDashboard('d1');
+//           loadDashboard('d1');
       
-      function listClick(elem) {
-              const _elem = document.getElementsByClassName('first')[0];
-              _elem.classList.remove('first');
-              elem.classList.add('first');
+//       function listClick(elem) {
+//               const _elem = document.getElementsByClassName('first')[0];
+//               _elem.classList.remove('first');
+//               elem.classList.add('first');
   
-        const key = elem.getAttribute('value');
-        loadDashboard(key);
-      }
+//         const key = elem.getAttribute('value');
+//         loadDashboard(key);
+//       }
   
-      function loadDashboard(key) {
+//       function loadDashboard(key) {
   
-              let { url, id, isLoaded } = mapping[key];
-              if (!isLoaded) { 
-                  let config = { id, width: "100%", height, style: 'border:none;' }
+//               let { url, id, isLoaded } = mapping[key];
+//               if (!isLoaded) { 
+//                   let config = { id, width: "100%", height, style: 'border:none;' }
   
-                  let bipp = new Bipp();
-                  bipp.load(url, config);
-                  mapping[key].isLoaded = true;
-              }
-              // hide others except the current one
-              for(let k in mapping) {
-                  let v = mapping[k];
-                  const el = document.getElementById(v.id);
-                  if (v.id != id) {
-                      el.style.display = 'none';
-                  }
-                  else {
-                      el.style.display = 'block';
-                  }
-              }
-      }
-      </script>
-  </body>
+//                   let bipp = new Bipp();
+//                   bipp.load(url, config);
+//                   mapping[key].isLoaded = true;
+//               }
+//               // hide others except the current one
+//               for(let k in mapping) {
+//                   let v = mapping[k];
+//                   const el = document.getElementById(v.id);
+//                   if (v.id != id) {
+//                       el.style.display = 'none';
+//                   }
+//                   else {
+//                       el.style.display = 'block';
+//                   }
+//               }
+//       }
+//       </script>
+//   </body>
   
-  </html>`)
-});
+//   </html>`)
+// });
 
 app.get("/", (req, res) => {
 
