@@ -519,7 +519,7 @@ display: inline-block;
       <li><a href="contact.html">HR</a></li>
       <div class="logo1">
           <span class="userName">Jim</span>
-          <div id="yabanner"></div>
+          <div id="x"></div> 
         
       </div>
   </ul>
@@ -546,7 +546,13 @@ display: inline-block;
     </div>
   </div>
   <script>
-
+  var img = document.createElement("img"); 
+ 
+  img.src = "image.png"; 
+  var src = document.getElementById("x"); 
+   
+  src.appendChild(img); 
+  
       const width = window.innerWidth;
       const height = window.innerHeight;
 
@@ -557,12 +563,7 @@ display: inline-block;
       
       let bipp = new Bipp();
       bipp.load(url, config);
-      yaGetBanner();
-      function yaGetBanner()
-      {
-         var el = document.getElementById("yabanner");
-         el.innerHTML="<img src=\"C-Mart-logos.jpeg" width=\"400px\" height=\"150px\">";
-      }
+      
   </script>
   
   </body>
