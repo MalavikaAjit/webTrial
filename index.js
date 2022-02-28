@@ -225,7 +225,7 @@ display: inline-block;
       <li><a href="contact.html">HR</a></li>
       <div class="logo1">
           <span class="userName">Jim</span>
-          <img src="./images/image.png" alt="logo">
+          <img src="image.png" alt="logo">
         
       </div>
   </ul>
