@@ -546,12 +546,7 @@ display: inline-block;
     </div>
   </div>
   <script>
-  yaGetBanner();
-  function yaGetBanner()
-  {
-     var el = document.getElementById("yabanner");
-     el.innerHTML="<img src=\"C-Mart-logos.jpeg" width=\"400px\" height=\"150px\">";
-  }
+
       const width = window.innerWidth;
       const height = window.innerHeight;
 
@@ -562,6 +557,12 @@ display: inline-block;
       
       let bipp = new Bipp();
       bipp.load(url, config);
+      yaGetBanner();
+      function yaGetBanner()
+      {
+         var el = document.getElementById("yabanner");
+         el.innerHTML="<img src=\"C-Mart-logos.jpeg" width=\"400px\" height=\"150px\">";
+      }
   </script>
   
   </body>
