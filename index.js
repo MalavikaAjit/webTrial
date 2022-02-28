@@ -70,7 +70,7 @@ display: inline-block;
       border-radius: 100px; */
   }
 
-  .logo1 img {
+  #x {
       width: 21%;
       /* border: 3px solid rgb(245, 245, 245);
       border-radius: 100px; */
@@ -262,7 +262,7 @@ display: inline-block;
   }; 
    
    
-  img.src = 'image.jpg'; 
+  img.src = 'image.png'; 
 
       const width = window.innerWidth;
       const height = window.innerHeight;
