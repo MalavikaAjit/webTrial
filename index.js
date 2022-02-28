@@ -519,7 +519,8 @@ display: inline-block;
       <li><a href="contact.html">HR</a></li>
       <div class="logo1">
           <span class="userName">Jim</span>
-          <img src="./logos/image.png" alt="logo">
+          <div id="yabanner"></div>
+        
       </div>
   </ul>
           <!-- <div class="rightnav v-class-resp">
@@ -545,7 +546,12 @@ display: inline-block;
     </div>
   </div>
   <script>
-
+  yaGetBanner();
+  function yaGetBanner()
+  {
+     var el = document.getElementById("yabanner");
+     el.innerHTML="<img src=\"C-Mart-logos.jpeg" width=\"400px\" height=\"150px\">";
+  }
       const width = window.innerWidth;
       const height = window.innerHeight;
 
