@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 
 let port = process.env.PORT || 9000;
 
-
+app.use(express.static('public'));
+app.use('/images', express.static(__dirname + '/Images'));
 
 app.get("/", (req, res) => {
 
@@ -224,7 +225,7 @@ display: inline-block;
       <li><a href="contact.html">HR</a></li>
       <div class="logo1">
           <span class="userName">Jim</span>
-          <div id="x"></div> 
+          <img src="./images/image.png" alt="logo">
         
       </div>
   </ul>
@@ -251,18 +252,18 @@ display: inline-block;
     </div>
   </div>
   <script>
-  var img = new Image(); 
-  var div = document.getElementById('x'); 
+//   var img = new Image(); 
+//   var div = document.getElementById('x'); 
    
    
-  img.onload = function() { 
+//   img.onload = function() { 
    
-    div.innerHTML += '<img src="'+img.src+'" />';  
+//     div.innerHTML += '<img src="'+img.src+'" />';  
    
-  }; 
+//   }; 
    
    
-  img.src = 'image.png'; 
+//   img.src = 'image.png'; 
 
       const width = window.innerWidth;
       const height = window.innerHeight;
