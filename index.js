@@ -217,7 +217,7 @@ display: inline-block;
       <div>
       <nav class="navbar background h-nav-resp">
       <ul class="nav-list">
-      <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+      <div class="logo"><img src="C-Mart-logos.jpeg" alt="logo"></div>
       <li class="sales"><a href="index.html">Sales</a></li>
       <li><a href="About.html">Marketing</a></li>
       <li><a href="#services">Finance</a></li>
@@ -282,46 +282,7 @@ display: inline-block;
 
 });
 
-// app.get("/dev", (req, res) => {
 
-//   res.send(`<!DOCTYPE html>
-//   <html>
-//       <head>
-//           <meta name="viewport" content="width=device-width, initial-scale=1">
-//           <style>
-//             .main {
-//                 margin: 30px;
-//             }
-
-//         </style>
-//       </head>
-//   <body>
-//       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-//       <script src="https://unpkg.com/bipp-dev"></script>
-
-//   <div class="main">
-//     <h2>Bipp dashboard</h2>
-//     <div class="dashboard">
-//         <div id='container'></div>
-//     </div>
-//   </div>
-//   <script>
-
-//       const width = window.innerWidth;
-//       const height = window.innerHeight;
-
-//       let url = "https://harshitaja.app.bippanalytics.com/embed/ce726b8d-da40-409c-9ea8-f3d2c1e1dee7?id=29144ca3-897d-4b79-8733-70a03148a7c0&cid=1c9f92f947f8478fbfca7872b5e92a4d.harshitaja.app.bippanalytics.com&secret=!N9Vk083lBwxeQg9mKKtRFLO0jbfU4PiQx9jPx4Gu35pk6Ks"
-
-//       let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-
-//       let bipp = new Bipp();
-//       bipp.load(url, config);
-//   </script>
-
-//   </body>
-//   </html>`)
-
-// });
 
 app.listen(port, function () {
     console.log("Running node server", "on port " + port);
