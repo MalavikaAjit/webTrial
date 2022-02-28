@@ -4,9 +4,9 @@ const bodyParser = require("body-parser");
 let app = express();
 
 app.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
+    bodyParser.urlencoded({
+        extended: true
+    })
 );
 
 app.use(bodyParser.json());
@@ -312,150 +312,197 @@ let port = process.env.PORT || 9000;
 
 app.get("/", (req, res) => {
 
-  res.send(`<!DOCTYPE html>
+    res.send(`<!DOCTYPE html>
   <html>
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-      
-      * {
-          margin: 0px;
-          padding: 0px;
-      }
+  * {
+      margin: 0px;
+      padding: 0px;
+  }
 
-      .logo {
-          width: 22%;
-          display: flex;
-          justify-content: start;
-          align-items: revert;
+  .logo {
+      width: 22%;
+      display: flex;
+      justify-content: start;
+      align-items: revert;
 
-      }
+  }
 
+  .logo1 {
+      width: 15%;
+      display: flex;
+      justify-content: end;
+      align-items: revert;
 
-      .logo img {
-          width: 75%;
-          /* border: 3px solid rgb(245, 245, 245);
-          border-radius: 100px; */
-      }
+  }
 
+  .nav-list li a .sales {
+      background-color: #f44336 !important;
+      color:  #035626 !important;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
 
-      .navbar {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: sticky;
-          top: 0;
-          cursor: pointer;
-          border-bottom: 2px solid #030956;
-          ;
-      }
-
-
-      .background {
-          background: rgba(224, 219, 219, 0.03) url(../img/img3.jpg);
-          background-size: cover;
-          background-blend-mode: darken;
-      }
-
-
-      .nav-list {
-          width: 70%;
-          display: flex;
-          align-items: center;
-      }
+  /* .nav-list li a:visited {
+background-color: #f44336;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+} */
 
 
-      .nav-list li {
-          list-style: none;
-          padding: 27px 81px;
-          font-size: 20px;
-          font-family: 'Ubuntu', sans-serif;
-      }
+  .logo img {
+      width: 22%;
+      /* border: 3px solid rgb(245, 245, 245);
+      border-radius: 100px; */
+  }
 
-      .userName {
-          font-size: 20px;
-          font-family: 'Ubuntu', sans-serif;
-          margin-right: 5px;
-      }
+  .logo1 img {
+      width: 21%;
+      /* border: 3px solid rgb(245, 245, 245);
+      border-radius: 100px; */
+  }
 
-
-      .nav-list li a {
-          text-decoration: none;
-          color: #030956;
-      }
-
-
-      .nav-list li a:hover {
-          color: black;
-          background-color: rgb(255, 255, 255);
-      }
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      cursor: pointer;
+      border-bottom: 2px solid #030956;
+      ;
+  }
 
 
-      .rightnav {
-
-          width: 3%;
-          text-align: right;
-          padding: 0 23px;
-      }
-
+  .background {
+      background: rgba(224, 219, 219, 0.03) url(../img/img3.jpg);
+      background-size: cover;
+      background-blend-mode: darken;
+  }
 
 
+  .nav-list {
+      /* width: 70%;
+      display: flex;
+      align-items: center; */
+      display: flex;
+      list-style: wrap;
+      align-items: center;
+  }
 
-      #btn btn-sm a {
-          list-style: none;
-          text-decoration: none;
-          color: white;
-      }
 
-      .btn {
-          padding: 8px 20px;
-          margin: 7px 6px;
-          border: 2px solid white;
-          border-radius: 50px;
-          background: none;
-          color: white;
-          cursor: pointer;
-          font-family: 'Ubuntu', sans-serif;
-          font-size: 16px;
-      }
+  .nav-list li {
+      list-style: none;
+      padding: 27px 81px;
+      font-size: 20px;
+      font-family: 'Ubuntu', sans-serif;
+  }
 
-      .btn a {
-          text-decoration: none;
-          color: white;
-      }
+  .userName {
+      font-size: 20px;
+      font-family: 'Ubuntu', sans-serif;
+      margin-right: 7px;
+      display: flex;
+      align-items: center;
+  }
 
-      .btn:hover {
-          text-decoration: none;
-          list-style: none;
-          color: rgb(0, 0, 0);
-          background-color: rgb(0, 255, 191);
-      }
 
-      .btn-dark {
-          color: black;
-          border: 2px solid black;
-      }
+  .nav-list li a {
+      text-decoration: none;
+      color: #030956;
+  }
 
-   
-      .center-div{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      .div2 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
 
-      .font {
-          font-size: 40px;
-          font-family: 'Ubuntu', sans-serif;
-          color: #030956;
-      }
-  </style>
+  .nav-list li a:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+  }
+
+
+  .rightnav {
+
+      width: 3%;
+      text-align: right;
+      padding: 0 23px;
+  }
+
+
+
+
+  #btn btn-sm a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn {
+      padding: 8px 20px;
+      margin: 7px 6px;
+      border: 2px solid white;
+      border-radius: 50px;
+      background: none;
+      color: white;
+      cursor: pointer;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 16px;
+  }
+
+  .btn a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn:hover {
+      text-decoration: none;
+      list-style: none;
+      color: rgb(0, 0, 0);
+      background-color: rgb(0, 255, 191);
+  }
+
+  .btn-dark {
+      color: black;
+      border: 2px solid black;
+  }
+
+  /* .center-div {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 188px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 3px;
+  } */
+  .center-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .div2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .font {
+      font-size: 40px;
+      font-family: 'Ubuntu', sans-serif;
+      color: #030956;
+  }
+</style>
   <title>project</title>
 </head>
   <body>
@@ -464,15 +511,17 @@ app.get("/", (req, res) => {
   
       <div>
       <nav class="navbar background h-nav-resp">
-          <ul class="nav-list v-class-resp">
-              <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
-              <li><a href="index.html">Sales</a></li>
-              <li><a href="About.html">Marketing</a></li>
-              <li><a href="#services">Finance</a></li>
-              <li><a href="contact.html">HR</a></li>
-              <span class="userName">Jim</span>
-              <div class="logo"><img src="./logos/image.png" alt="logo"></div>
-          </ul>
+      <ul class="nav-list">
+      <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+      <li class="sales"><a href="index.html">Sales</a></li>
+      <li><a href="About.html">Marketing</a></li>
+      <li><a href="#services">Finance</a></li>
+      <li><a href="contact.html">HR</a></li>
+      <div class="logo1">
+          <span class="userName">Jim</span>
+          <img src="./logos/image.png" alt="logo">
+      </div>
+  </ul>
           <!-- <div class="rightnav v-class-resp">
               <span>Jim</span>
               <div class="logo"><img src="./logos/image.png" alt="logo"></div>
@@ -556,5 +605,5 @@ app.get("/", (req, res) => {
 // });
 
 app.listen(port, function () {
-  console.log("Running node server", "on port " + port);
+    console.log("Running node server", "on port " + port);
 });
