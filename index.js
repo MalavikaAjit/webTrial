@@ -251,12 +251,18 @@ display: inline-block;
     </div>
   </div>
   <script>
-  var img = document.createElement("img"); 
- 
-  img.src = "image.png"; 
-  var src = document.getElementById("x"); 
+  var img = new Image(); 
+  var div = document.getElementById('x'); 
    
-  src.appendChild(img); 
+   
+  img.onload = function() { 
+   
+    div.innerHTML += '<img src="'+img.src+'" />';  
+   
+  }; 
+   
+   
+  img.src = 'image.jpg'; 
 
       const width = window.innerWidth;
       const height = window.innerHeight;
