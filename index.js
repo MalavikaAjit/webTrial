@@ -210,10 +210,10 @@ app.get("/", (req, res) => {
               <li><a href="#!">HR</a></li>
               <div class="logo1">
                   <span class="userName">Jim</span>
-                  <img src="./logos/image.png" alt="logo">
+                  <img src="image.png" alt="logo">
               </div>
           </ul>
-          <!-- <div class="rightnav v-class-resp">
+          <!-- <div class="rightnav ">
               <span>Jim</span>
               <div class="logo"><img src="image.png" alt="logo"></div>
           </div> -->
@@ -232,7 +232,7 @@ app.get("/", (req, res) => {
       <div>
 
 
-          <div class="middleImage"><img src="Picture2.jpg" alt="logo"></div>
+          <div class="middleImage"><img src="Picture1.jpg" alt="logo"></div>
 
 
       </div>
