@@ -48,40 +48,27 @@ app.get("/", (req, res) => {
 
   .nav-list li a .sales {
       background-color: #f44336 !important;
-      color:  #035626 !important;
+      color: #035626 !important;
       padding: 14px 25px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-  }
-
-  /* .nav-list li a:visited {
-background-color: #f44336;
-color: white;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-} */
-
+  }     
 
   .logo img {
       width: 22%;
-      /* border: 3px solid rgb(245, 245, 245);
-      border-radius: 100px; */
+     
   }
 
-  #x {
+  .logo1 img {
       width: 21%;
-      /* border: 3px solid rgb(245, 245, 245);
-      border-radius: 100px; */
+     
   }
 
   .navbar {
       display: flex;
       align-items: center;
       justify-content: center;
-      position: sticky;
       top: 0;
       cursor: pointer;
       border-bottom: 2px solid #030956;
@@ -97,9 +84,7 @@ display: inline-block;
 
 
   .nav-list {
-      /* width: 70%;
-      display: flex;
-      align-items: center; */
+  
       display: flex;
       list-style: wrap;
       align-items: center;
@@ -126,13 +111,12 @@ display: inline-block;
       text-decoration: none;
       color: #030956;
   }
-
-
-  .nav-list li a:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
+  .nav-list li a .sales {
+      text-decoration: none;
+      color: #f6f7fa !important;
   }
 
+  
 
   .rightnav {
 
@@ -140,10 +124,6 @@ display: inline-block;
       text-align: right;
       padding: 0 23px;
   }
-
-
-
-
   #btn btn-sm a {
       list-style: none;
       text-decoration: none;
@@ -178,35 +158,40 @@ display: inline-block;
       color: black;
       border: 2px solid black;
   }
-
-  /* .center-div {
-      position: absolute;
-      margin: auto;
-      top: 0;
-      right: 0;
-      bottom: 188px;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      background-color: #ccc;
-      border-radius: 3px;
-  } */
   .center-div {
       display: flex;
       justify-content: center;
       align-items: center;
   }
 
-  .div2 {
+  .div2,
+  .middleImage {
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+
+  .middleImage img {
+      width: 100vw;
   }
 
   .font {
       font-size: 40px;
       font-family: 'Ubuntu', sans-serif;
       color: #030956;
+  }
+  .heilight-name{
+      color: #f6f7fa !important;
+  }
+
+  .sales {
+
+      background-color:  #030956;
+      width: 30px;
+      border: 1px solid rgb(218, 218, 226);
+      /* padding: 6px;
+      margin: 7px; */
+      color: aliceblue !important;
   }
 </style>
   <title>project</title>
@@ -216,19 +201,18 @@ display: inline-block;
       <script src="https://unpkg.com/bipp"></script>
   
       <div>
-      <nav class="navbar background h-nav-resp">
-      <ul class="nav-list">
-      <div class="logo"><img src="C-Mart-logos.jpeg" alt="logo"></div>
-      <li class="sales"><a href="index.html">Sales</a></li>
-      <li><a href="About.html">Marketing</a></li>
-      <li><a href="#services">Finance</a></li>
-      <li><a href="contact.html">HR</a></li>
-      <div class="logo1">
-          <span class="userName">Jim</span>
-          <img src="image.png" alt="logo">
-        
-      </div>
-  </ul>
+      <nav class="navbar background">
+          <ul class="nav-list">
+              <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+              <li class="sales"><a href="index.html" class="heilight-name">Sales</a></li>
+              <li><a href="#!">Marketing</a></li>
+              <li><a href="#!">Finance</a></li>
+              <li><a href="#!">HR</a></li>
+              <div class="logo1">
+                  <span class="userName">Jim</span>
+                  <img src="./logos/image.png" alt="logo">
+              </div>
+          </ul>
           <!-- <div class="rightnav v-class-resp">
               <span>Jim</span>
               <div class="logo"><img src="./logos/image.png" alt="logo"></div>
@@ -237,10 +221,22 @@ display: inline-block;
       </nav>
       <div style="padding: 40px;">
           <div class="center-div">
-              <span class="div2 font">Hi jim  Welcome to C-Mart</span>
+              <span class="div2 font">Hi jim </span>
+
+          </div>
+          <div class="center-div">
+              <span class="div2 font"> Welcome to C-Mart</span>
 
           </div>
       </div>
+      <div>
+
+
+          <div class="middleImage"><img src="Picture2.jpg" alt="logo"></div>
+
+
+      </div>
+
       <div style="padding: 40px;">
           <div class="center-div">
               <span class="div2 font">Here’s Your Sales Dashboard</span>
