@@ -203,7 +203,7 @@ app.get("/", (req, res) => {
       <div>
       <nav class="navbar background">
           <ul class="nav-list">
-              <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+              <div class="logo"><img src="C-Mart-logos.jpeg" alt="logo"></div>
               <li class="sales"><a href="index.html" class="heilight-name">Sales</a></li>
               <li><a href="#!">Marketing</a></li>
               <li><a href="#!">Finance</a></li>
@@ -215,7 +215,7 @@ app.get("/", (req, res) => {
           </ul>
           <!-- <div class="rightnav v-class-resp">
               <span>Jim</span>
-              <div class="logo"><img src="./logos/image.png" alt="logo"></div>
+              <div class="logo"><img src="image.png" alt="logo"></div>
           </div> -->
 
       </nav>
