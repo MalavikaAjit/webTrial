@@ -25,241 +25,232 @@ app.get("/", (req, res) => {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  * {
-      margin: 0px;
-      padding: 0px;
-  }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
 
-  .logo {
-      width: 22%;
-      display: flex;
-      justify-content: start;
-      align-items: revert;
+        .logo {
+            width: 22%;
+            display: flex;
+            justify-content: start;
+            align-items: revert;
 
-  }
+        }
 
-  .logo1 {
-      width: 15%;
-      display: flex;
-      justify-content: end;
-      align-items: revert;
+        .logo1 {
+            width: 15%;
+            display: flex;
+            justify-content: end;
+            align-items: revert;
 
-  }
+        }
 
-  .nav-list li a .sales {
-      background-color: #f44336 !important;
-      color: #035626 !important;
-      padding: 14px 25px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-  }     
+        .banner {
+            background-color: #030956 !important;
+            color: #ffffff !important;
+            padding: 14px 25px;
+            width: 100vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-  .logo img {
-      width: 22%;
-     
-  }
+        .bannerLink {
+            color: #ffffff;
+        }
 
-  .logo1 img {
-      width: 21%;
-     
-  }
+        .logo img {
+            width: 22%;
 
-  .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 0;
-      cursor: pointer;
-      border-bottom: 2px solid #030956;
-      ;
-  }
+        }
 
+        .logo1 img {
+            width: 21%;
 
-  .background {
-      background: rgba(224, 219, 219, 0.03) url(../img/img3.jpg);
-      background-size: cover;
-      background-blend-mode: darken;
-  }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            cursor: pointer;
+            border-bottom: 2px solid #030956;
+            ;
+        }
 
 
-  .nav-list {
-  
-      display: flex;
-      list-style: wrap;
-      align-items: center;
-  }
+        .background {
+            background: rgba(224, 219, 219, 0.03) url(../img/img3.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
 
 
-  .nav-list li {
-      list-style: none;
-      padding: 27px 81px;
-      font-size: 20px;
-      font-family: 'Ubuntu', sans-serif;
-  }
+        .nav-list {
 
-  .userName {
-      font-size: 20px;
-      font-family: 'Ubuntu', sans-serif;
-      margin-right: 7px;
-      display: flex;
-      align-items: center;
-  }
+            display: flex;
+            list-style: wrap;
+            align-items: center;
+        }
 
 
-  .nav-list li a {
-      text-decoration: none;
-      color: #030956;
-  }
-  .nav-list li a .sales {
-      text-decoration: none;
-      color: #f6f7fa !important;
-  }
+        .nav-list li {
+            list-style: none;
+            padding: 27px 81px;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
 
-  
+        .userName {
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            margin-right: 7px;
+            display: flex;
+            align-items: center;
+        }
 
-  .rightnav {
 
-      width: 3%;
-      text-align: right;
-      padding: 0 23px;
-  }
-  #btn btn-sm a {
-      list-style: none;
-      text-decoration: none;
-      color: white;
-  }
+        .nav-list li a {
+            text-decoration: none;
+            color: #030956;
+        }
 
-  .btn {
-      padding: 8px 20px;
-      margin: 7px 6px;
-      border: 2px solid white;
-      border-radius: 50px;
-      background: none;
-      color: white;
-      cursor: pointer;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 16px;
-  }
 
-  .btn a {
-      text-decoration: none;
-      color: white;
-  }
+        .rightnav {
 
-  .btn:hover {
-      text-decoration: none;
-      list-style: none;
-      color: rgb(0, 0, 0);
-      background-color: rgb(0, 255, 191);
-  }
+            width: 3%;
+            text-align: right;
+            padding: 0 23px;
+        }
 
-  .btn-dark {
-      color: black;
-      border: 2px solid black;
-  }
-  .center-div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+        #btn btn-sm a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
 
-  .div2,
-  .middleImage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 6px;
+            border: 2px solid white;
+            border-radius: 50px;
+            background: none;
+            color: white;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+        }
 
-  .middleImage img {
-      width: 100vw;
-  }
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
 
-  .font {
-      font-size: 40px;
-      font-family: 'Ubuntu', sans-serif;
-      color: #030956;
-  }
-  .heilight-name{
-      color: #f6f7fa !important;
-  }
+        .btn:hover {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 255, 191);
+        }
 
-  .sales {
+        .btn-dark {
+            color: black;
+            border: 2px solid black;
+        }
 
-      background-color:  #030956;
-      width: 30px;
-      border: 1px solid rgb(218, 218, 226);
-      /* padding: 6px;
-      margin: 7px; */
-      color: aliceblue !important;
-  }
-</style>
-  <title>project</title>
+        .center-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2,
+        .middleImage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middleImage img {
+            width: 100vw;
+        }
+
+        .font {
+            font-size: 29px;
+            font-family: 'Ubuntu', sans-serif;
+            color: #030956;
+        }
+
+        .heilight-name {
+            color: #f6f7fa !important;
+        }
+
+        .sales {
+
+            background-color: #030956;
+            width: 30px;
+            border: 1px solid rgb(218, 218, 226);           
+            color: aliceblue !important;
+        }
+    </style>
+    <title>Heroku Project</title>
 </head>
-  <body>
+<body>
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script src="https://unpkg.com/bipp"></script>
   
-      <div>
-      <nav class="navbar background">
-          <ul class="nav-list">
-              <div class="logo"><img src="C-Mart-logos.jpeg" alt="logo"></div>
-              <li class="sales"><a href="index.html" class="heilight-name">Sales</a></li>
-              <li><a href="#!">Marketing</a></li>
-              <li><a href="#!">Finance</a></li>
-              <li><a href="#!">HR</a></li>
-              <div class="logo1">
-                  <span class="userName">Jim</span>
-                  <img src="image.png" alt="logo">
-              </div>
-          </ul>
-          <!-- <div class="rightnav ">
-              <span>Jim</span>
-              <div class="logo"><img src="image.png" alt="logo"></div>
-          </div> -->
-
-      </nav>
-      <div style="padding: 40px;">
-          <div class="center-div">
-              <span class="div2 font">Hi Jim </span>
-
-          </div>
-          <div class="center-div">
-              <span class="div2 font"> Welcome to C-Mart</span>
-
-          </div>
-      </div>
-      <div>
+    <div>
+            <nav class="navbar background">
+                    <ul class="nav-list">
+                        <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+                        <li class="sales"><a href="index.html" class="heilight-name">Sales</a></li>
+                        <li><a href="#!">Marketing</a></li>
+                        <li><a href="#!">Finance</a></li>
+                        <li><a href="#!">HR</a></li>
+                        <div class="logo1">
+                            <span class="userName">Jim</span>
+                            <img src="./logos/image.png" alt="logo">
+                        </div>
+                    </ul>
 
 
-          <div class="middleImage"><img src="Picture1.jpg" alt="logo"></div>
+                </nav>
+                <div style="padding: 40px;">
+                    <div class="center-div">
+                        <span class="div2 font">Hi Jim </span>
 
+                    </div>
+                    <div class="center-div">
+                        <span class="div2 font"> Welcome to C-Mart</span>
 
-      </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="middleImage"><img src="./logos/Picture2.jpg" alt="logo"></div>
+                </div>
 
-      <div style="padding: 40px;">
-          <div class="center-div">
-              <span class="div2 font">Here’s Your Sales Dashboard</span>
+                <div style="padding: 40px;">
+                    <div class="center-div">
+                        <span class="div2 font">Here’s Your Sales Dashboard</span>
 
-          </div>
-      </div>
-      <div class="dashboard">
-        <div id='container'></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="center-div">
+                        <span class="div2 font banner">To learn more about bipp’s Embedded Analytics, click &nbsp; <a
+                                href="https://bipp.io/features/embedded-analytics/" class="bannerLink"> here</a>
+                        </span>
+
+                    </div>
+                </div>
+        <div class="dashboard">
+            <div id='container'></div>
     </div>
   </div>
   <script>
-//   var img = new Image(); 
-//   var div = document.getElementById('x'); 
-   
-   
-//   img.onload = function() { 
-   
-//     div.innerHTML += '<img src="'+img.src+'" />';  
-   
-//   }; 
-   
-   
-//   img.src = 'image.png'; 
+
 
       const width = window.innerWidth;
       const height = window.innerHeight;
