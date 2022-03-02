@@ -204,14 +204,14 @@ app.get("/", (req, res) => {
     <div>
             <nav class="navbar background">
                     <ul class="nav-list">
-                        <div class="logo"><img src="./logos/C-Mart-logos.jpeg" alt="logo"></div>
+                        <div class="logo"><img src="C-Mart-logos.jpeg" alt="logo"></div>
                         <li class="sales"><a href="index.html" class="heilight-name">Sales</a></li>
                         <li><a href="#!">Marketing</a></li>
                         <li><a href="#!">Finance</a></li>
                         <li><a href="#!">HR</a></li>
                         <div class="logo1">
                             <span class="userName">Jim</span>
-                            <img src="./logos/image.png" alt="logo">
+                            <img src="image.png" alt="logo">
                         </div>
                     </ul>
 
@@ -228,7 +228,7 @@ app.get("/", (req, res) => {
                     </div>
                 </div>
                 <div>
-                    <div class="middleImage"><img src="./logos/Picture2.jpg" alt="logo"></div>
+                    <div class="middleImage"><img src="Picture1.jpg" alt="logo"></div>
                 </div>
 
                 <div style="padding: 40px;">
