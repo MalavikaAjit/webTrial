@@ -221,7 +221,7 @@ app.get("/", (req, res) => {
       </nav>
       <div style="padding: 40px;">
           <div class="center-div">
-              <span class="div2 font">Hi jim </span>
+              <span class="div2 font">Hi Jim </span>
 
           </div>
           <div class="center-div">
