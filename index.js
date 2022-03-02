@@ -237,18 +237,19 @@ app.get("/", (req, res) => {
 
                     </div>
                 </div>
-                <div>
-                    <div class="center-div">
-                        <span class="div2 font banner">To learn more about bipp’s Embedded Analytics, click &nbsp; <a
-                                href="https://bipp.io/features/embedded-analytics/" class="bannerLink"> here</a>
-                        </span>
-
-                    </div>
-                </div>
+               
         <div class="dashboard">
             <div id='container'></div>
+        </div>
+        <div>
+        <div class="center-div">
+            <span class="div2 font banner">To learn more about bipp’s Embedded Analytics, click &nbsp; <a
+                    href="https://bipp.io/features/embedded-analytics/" class="bannerLink"> here</a>
+            </span>
+
+        </div>
     </div>
-  </div>
+    </div>
   <script>
 
 
