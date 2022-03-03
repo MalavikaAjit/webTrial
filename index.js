@@ -173,9 +173,9 @@ app.get("/", (req, res) => {
             align-items: center;
         }
 
-        .middleImage img {
-            width: 100vw;
-        }
+        // .middleImage img {
+        //     width: 100vw;
+        // }
 
         .font {
             font-size: 29px;
