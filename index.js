@@ -167,7 +167,8 @@ app.get("/", (req, res) => {
         }
 
         .div2,
-        .middleImage {
+        .middleImage,
+        .div3 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -227,8 +228,8 @@ app.get("/", (req, res) => {
 
                     </div>
                 </div>
-                <div>
-                    <div class="middleImage"><img src="Picture1.jpg" alt="logo"></div>
+                <div class="div3">
+                    <div class="middleImage"><img style="width: 77%;" src="Picture1.jpg" alt="logo"></div>
                 </div>
 
                 <div style="padding: 40px;">
