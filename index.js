@@ -199,8 +199,8 @@ app.get("/", (req, res) => {
     <title>Heroku Project</title>
 </head>
 <body>
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-      <script src="https://unpkg.com/bipp"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/bipp"></script>
   
     <div>
             <nav class="navbar background">
@@ -259,11 +259,11 @@ app.get("/", (req, res) => {
 
       //let url = "https://ketaki-desale.app.bipp.io/embed/68cc77a6-fc72-497d-bbb9-0b1ffe01e579?id=707b84b7-7a5c-47a5-9847-a163319daa95&cid=f570dc6573a6478cb954e82fa603ae97.ketaki-desale.app.bipp.io&secret=MNTGHrqSnWBQ0zonnyfphbJn3!mFM!@RP!davQJi!lXkUFEz";
       //let url = "https://ketaki-desale.app.bipp.io/embed/443c2551-937f-44c6-8252-88f3d4739ebc?id=a8c75ef8-d90a-404f-a5de-5139952513ab&cid=16cc46c2c9054fdeac09ea1f6385b380.ketaki-desale.app.bipp.io&secret=r6hXP@nwPUmDFeRO9R@b25dyrfTIv65mOsVPPKEtPJRQncPF";    
-      let url = "https://avinash-k.app.bipp.io/embed/087d6d21-723f-4eae-b031-a3fbdb596e4d?id=08b7e9d2-e03d-4791-9c50-84688b0b965e&cid=c01583bf4fe34c6daa4da326f16d6a48.avinash-k.app.bipp.io&secret=bmIee6wFaRAsIYiWadwcDbX1QvmmCRQ7BzB4!FpB3JdjSHTi"
-      let config = { id : 'container', width: "100%", height: height, style: 'border:none;' }
-      
-      let bipp = new Bipp();
-      bipp.load(url, config);
+      let url = "https://avinash-k.app.bipp.io/embed/be86952b-b476-454f-aea5-be8e48bb7943?id=f58e1fbc-55c0-40e8-ac4b-96a434f570a2&cid=e64dd5e8d20948d9b1f6d1bff414cac0.avinash-k.app.bipp.io&secret=WpodrNk5SZAXnXeWUsTag4w5hfzR2ncQ0TelF!6gYL8m4YVd";
+    let config = { id : 'container', width: '1200px', height: '900px', style: 'border:none;' }
+    
+    let bipp = new Bipp();
+    bipp.load(url, config);
       
   </script>
   
